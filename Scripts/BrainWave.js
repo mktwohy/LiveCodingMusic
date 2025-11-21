@@ -1,6 +1,7 @@
 /*
 @title Brain Wave
 @by Maeve Twohy
+@url https://www.youtube.com/watch?v=LVgO8mV7_l4
 */
 
 setcpm(150/5)
