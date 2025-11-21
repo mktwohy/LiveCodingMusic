@@ -47,4 +47,4 @@ stack(
   ).gain(slider(0.588, 0, 1)),
   bassC.gain(slider(0.732, 0, 1)),
   drums.gain(slider(0.758, 0, 1)),
-);
+)
