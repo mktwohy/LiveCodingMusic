@@ -1,0 +1,42 @@
+/*
+@title Acid Thing
+@author Maeve Twohy
+*/
+
+setcpm(120/4)
+
+const key = "b:phrygian"
+
+$KICK: sound("sbd!4")
+  .duck("2")
+  .duckdepth(1)
+  .duckattack(.2)
+
+$ACCENTS: n("0")
+  .sound("square")
+  .scale(key)
+  .distort("24:.1")
+  .trans(24)
+  .lpf(slider(12, 0, 100))
+  .lpenv(slider(3, 0, 10))
+  .lpq(slider(50, 0, 50))
+  .euclid("<7 9 11 15>", 16)
+  .postgain(.8)
+
+$ARP: n("<0 0 7 4 1 5>*16")
+  .sound("saw")
+  .scale(key)
+  .trans(-12)
+  .distort("2:.2")
+  .lpf(200)
+  .lpenv(slider(1.87, 0, 5))
+  .lpq(12)
+  .orbit(2)
+
+$BASS: n("<0!4 5 3>@3 [7 13]")
+  .sound("saw")
+  .scale(key)
+  .distort("5:.1")
+  .trans(-24)
+  .lpf(800)
+  // .orbit(2)
