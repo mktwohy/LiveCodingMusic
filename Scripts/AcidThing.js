@@ -12,12 +12,12 @@ $KICK: sound("sbd!4")
   .duckdepth(.9)
   .duckattack(.2)
 
-$DRUMS: stack(
+_$DRUMS: stack(
   sound("- rim - rim*<1!3 3>"),
   sound("hh*16").velocity("[1 .2 .7 .5]*4"),
 )
 
-_$ACCENTS: n("0!5 1 7 <9 3 2>")
+$ACCENTS: n("0!5 1 7 <9 3 2>")
   .sound("square")
   .scale(key)
   .distort("24:.1")
